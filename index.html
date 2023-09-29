@@ -17,12 +17,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
 
   gtag('config', 'G-Q6K20Z0PRJ',{
+  'send_page_view': false, // Disable automatic page view tracking
   'custom_map': {
     'dimension1': 'phone'
-  }
+  },
+  'debug_mode': true // Enable debug mode
 });
 
-// Set the email address as a custom dimension
+// Set the phone number as a custom dimension
 gtag('set', {
   'phone': 'gtaguserphone'
 });
