@@ -16,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-Q6K20Z0PRJ',{
+ gtag('config', 'G-Q6K20Z0PRJ', {
   'send_page_view': false, // Disable automatic page view tracking
   'custom_map': {
     'dimension1': 'email'
@@ -24,9 +24,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'debug_mode': true // Enable debug mode
 });
 
-// Set the phone number as a custom dimension
-gtag('set', {
-  'email': 'gtaguseremail@example.com'
+// Set the email address as a custom dimension
+gtag('event', 'email_capture', {
+  'email': 'gtaguseremail@example.com' // Replace with an actual email address
 });
 </script>
 </head>
